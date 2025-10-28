@@ -16,6 +16,58 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 1140px;
+  gap: 30px;
+}
+
+.result__video-container {
+  /* height: 386px; */
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content__list-container {
+  height: 300px;
+  overflow-y: scroll;
+  gap: 30px;
+}
+
+.content__details {
+  height: 100%;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: flex;
+
+  align-items: flex-start;
 }
 
 h1,
