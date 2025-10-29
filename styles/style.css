@@ -44,8 +44,27 @@ html {
 .search-form {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 1.0;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list-container {
@@ -76,6 +95,7 @@ html {
 
 .more-button {
   width: 100%;
+  padding: 6px 0;
 }
 
 .content__video-card-thumbnail {
@@ -87,6 +107,132 @@ html {
 
 .content__video-card-description-container {
   flex-grow: 99;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 196px;
+}
+
+.contnet__video-card-description {
+  line-height: 16.2px;
+  font-weight: 400;
+  line-clamp: 4;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 15px;
+}
+
+.search-form__textfield {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  background-color: #1b1919;
+  appearance: none;
+  width: 225px;
+}
+
+/* TODO: Факультативный шаг. Когда элемент в
+фокусе — добавьте границу вокруг с использованием
+outline. У этого элемента нужно сбросить обводку
+в состоянии фокуса и вместо этого сделать границу
+у лейбла, который его окружает. Лейбл должен
+получать границу, только когда поле находится
+в состоянии :focus-visible, но не :focus. Чтобы
+это реализовать, можно применить хитрую комбинацию
+псевдоклассов на классе лейбла — :has(:focus-visible). */
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  opacity: 1;
+}
+
+.search-form__label:has(input[type="checkbox"]):hover + .search-form__label-text{
+  border-bottom: 1px solid #fff;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.search-form__submit-button {
+  height: 34px;
+  width: 194px;
+  align-self: end;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
 }
 
 h1,
