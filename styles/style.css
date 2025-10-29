@@ -138,9 +138,17 @@ html {
   background-color: #545050;
 }
 
-.content__card-link_current:hover {
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
   text-decoration: underline;
   background-color: transparent;
+}
+
+.content__card-link_current:hover {
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -253,9 +261,9 @@ html {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
   background-color: transparent;
   cursor: pointer;
-  letter-spacing: -2px;
 }
 
 .search-form__submit-button {
