@@ -62,7 +62,7 @@ html {
   font-weight: 700;
   font-size: 75px;
   text-transform: uppercase;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 .content__accent {
@@ -122,7 +122,7 @@ html {
   display: block;
 }
 
-.content__card-link:active .content__video-card{
+.content__card-link:active .content__video-card {
   background-color: #545050;
 }
 
@@ -220,7 +220,7 @@ outline. У этого элемента нужно сбросить обводк
 }
 
 .search-form__pseudo-checkbox::after {
-  content: "";
+  content: '';
   display: block;
   background-color: #fff;
   height: 100%;
@@ -229,11 +229,12 @@ outline. У этого элемента нужно сбросить обводк
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: "";
+  content: '';
   opacity: 1;
 }
 
-.search-form__label:has(input[type="checkbox"]):hover + .search-form__label-text{
+.search-form__label:has(input[type='checkbox']):hover
+  + .search-form__label-text {
   border-bottom: 1px solid #fff;
 }
 
@@ -264,8 +265,6 @@ outline. У этого элемента нужно сбросить обводк
 .button:focus-visible {
   outline: 1px solid #fff;
 }
-
-
 
 h1,
 h2,
