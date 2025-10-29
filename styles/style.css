@@ -75,6 +75,10 @@ html {
   gap: 30px;
 }
 
+.content__list-item {
+  padding: 3px;
+}
+
 .content__details {
   height: 534px;
   width: 400px;
@@ -112,6 +116,24 @@ html {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  display: block;
+}
+
+.content__card-link:active .content__video-card{
+  background-color: #545050;
+}
+
+.content__card-link_current:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .content__video-card-title {
