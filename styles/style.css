@@ -172,10 +172,6 @@ html {
   background-color: transparent;
 }
 
-.content__card-link_current:hover {
-  background-color: #545050;
-}
-
 .content__card-link:focus {
   outline: none;
 }
