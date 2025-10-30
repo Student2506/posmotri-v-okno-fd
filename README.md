@@ -1,4 +1,4 @@
-[https://github.com/Student2506/posmotri-v-okno-fd]
+https://github.com/Student2506/posmotri-v-okno-fd
 
 # Посмотри в окно  
   
