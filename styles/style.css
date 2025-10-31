@@ -251,6 +251,7 @@ html {
 
 .search-form__textfield:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label:focus {
@@ -260,7 +261,6 @@ html {
 .search-form__label:focus-within {
   outline: 1px solid #fff;
 }
-
 
 .search-form__pseudo-checkbox {
   width: 19px;
